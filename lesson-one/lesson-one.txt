@@ -1,0 +1,84 @@
+ARDUINO LESSON ONE 
+
+This lesson assumes that:
+
+	- You have an arduino connected to your computer.
+	- You have selected your arduino type under "Tools/Board" in your Arduino IDE. 
+	- You have selected the port your board is connected to under "Tools/Port" in your Arduino IDE.
+	
+Lesson objectives: 
+
+	- Understand what functions and code comments are
+	- Understand the purpose of the setup() and loop() functions that are part of every Arduino program
+	- Understand how a pin on the Arduino board can be used to control something 
+	- Write a program that blinks an LED on the Arduino board that is connected to pin 13
+	- Related video: https://www.youtube.com/watch?v=d8_xXNcGYgo&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=1&t=14s
+	
+Open the lesson one code example: 
+	
+	- In the Arduino IDE click "File/Open", navigate to "arduino-lessons/lesson-one", click on "lesson-one.ino" and click "Open". 
+	
+Code description:  
+
+	- Functions 
+		- Lines of code are grouped into a "function" to perform a specific task. 
+		- Functions start with the name of the function.
+			- In this example you see two functions named "setup" and "loop". 
+			- Don't worry about the "void" before the function name or the "()" after the function name for now.  We will cover those in a future lesson.  
+		- Notice there is an opening curly bracket "{" at before the function's code and a closing curly bracket "}" after the function's code. 
+		
+	- Comments 
+		- Comments are just words you put in your program to help explain to others (and yourself) what the  code is doing 
+		- Comments start with "//" 
+		- Comments are very helpful
+		
+	- setup() and loop() functions 
+		- Every Arduino program includes setup() and loop() functions 
+		- The setup() function only gets executed once. We put any code here to set things up for the loop() function to run.
+		- The loop() function runs over and over until we stop the program. This is where we put the code needed to accomplish the task we want our program to perform.  
+		
+	- Let's look at the setup() function first. "pinMode" is a command that sets the "mode" of a pin on the Arduino board. Remember that the setup() function only executes once.  Because the pinMode command is inside of the setup() function it only gets done once.  
+	
+	- The pinMode command takes two input parameters.  
+	
+	- The first parameter we give to the pinMode command is which pin we want to use.  We want to use pin 13 because that pin is connected to the LED we want to turn on and off.  
+
+	- Hold the Arduino so that the words "ARDUINO UNO" are readable. You will see a row of pin slots at the top. The pin slots look like [][][][][][][].  Notice that the first 13 pin slots are numbered  0 - 13.  Pin 13 is the one we are controlling with this program. Pin 13 is connected to an LED next to the pin on the Arduino board. 
+	
+	- The second parameter we give to the pinMOde command sets the pin's mode to be OUTPUT or INPUT.  That just means that we can set the pin to either output something or receive something.  In this case we want the pin to control something (the LED) so we set it to output.  13 is the pin number. What will pin 13 output?  It will output and electrical signal to the LED.  
+	
+	- Now let's look at the loop() function.  Remember that the loop() function executes repeatedly.  So all commands inside the loop() function get executed in order, over and over until the program stops.  
+	
+	- The first command inside of the loop() function is "digitalWrite".  The digitalWrite command takes two paramters.  
+	
+	- The first parameter to the digitalWrite command is the pin number.  
+	
+	- The second parameter to the digitalWrite command makes the pin output a HIGH signal or a LOW signal.  A high signal will cause the LED to turn on.  So the first digitalWrite command in the loop() function turns the LED on.  
+	
+	- The next command is "delay".  The delay command just causes the program to stall for a length of time.  The delay command takes one paramter which is the length of time to delay in milliseconds.  There are 1,000 milliseconds in one second.  
+
+	- So the first two commands in the loop() function have caused the LED to turn on for 1 second. 
+	
+	- The next command writes a low signal to the LED causing it to turn off.  
+	
+	- The next command is anohter 1 second delay. 
+	
+	- The loop() function continually repeats, causing the LED attached to pin 13 to blink, one second on and one second off.	
+	
+Activity:
+
+	- The program must be "compiled" before it can be run on the Arduino. Compiling a program just verifies that each line of code is written correctly so that the Arduino can understand them and execute them correclty.  
+	
+	- To compile the program click on "Sketch" then "Verify/Compile".  You should see the words "Compiling sketch" at the bottom of the window.  If it compiles correctly and does not find any errors in the code you will see the words "Done complining" at the bottom of the window.  
+	
+	- Now load the program to the arduino.  Click "Sketch" then "Upload".  When the program is finished loading you will see the words "Done uploading" at the bottom of the window.  
+	
+	- You should now see the LED next to pin 13 blink on for 1 second and off for 1 second.  
+	
+	- Change the delay parameter values to make the LED turn on for 3 seconds and off half a second. 
+
+	- Click "File" then "Save" to save the changes you made.  
+	
+	- Compile and upload the program to the Aruduino. Note that uploading the program also compiles it so you do not need to do the compile step separately.  Verify the LED blinks as intended.  
+	
+	- Play around with the delay paramter values to make the LED blink in different in different patterns.  
