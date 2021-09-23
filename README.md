@@ -1,2 +1,6 @@
-# arduino-lessons
-Arduino Lessons 
+# Arduino Lessons
+
+- Lesson One: Blink an LED on the Arduino board
+
+
+ 

@@ -1,5 +1,7 @@
 ARDUINO LESSON ONE 
 
+A program that blinks an LED
+
 This lesson assumes that:
 
 	- You have an arduino properly connected to your computer with a usb cable.
