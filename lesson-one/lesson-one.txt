@@ -2,17 +2,20 @@ ARDUINO LESSON ONE
 
 This lesson assumes that:
 
-	- You have an arduino connected to your computer.
+	- You have an arduino properly connected to your computer with a usb cable.
 	- You have selected your arduino type under "Tools/Board" in your Arduino IDE. 
 	- You have selected the port your board is connected to under "Tools/Port" in your Arduino IDE.
 	
 Lesson objectives: 
 
-	- Understand what functions and code comments are
-	- Understand the purpose of the setup() and loop() functions that are part of every Arduino program
-	- Understand how a pin on the Arduino board can be used to control something 
-	- Write a program that blinks an LED on the Arduino board that is connected to pin 13
-	- Related video: https://www.youtube.com/watch?v=d8_xXNcGYgo&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=1&t=14s
+	- Understand what functions and code comments are.
+	- Understand the purpose of the setup() and loop() functions that are part of every Arduino program.
+	- Understand how to control pin on the Arduino board to blink and LED. 
+	- Understand how to compile, upload, and run a program on the Arduino.  
+	
+Related video: 
+
+	https://www.youtube.com/watch?v=d8_xXNcGYgo&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=1&t=14s
 	
 Open the lesson one code example: 
 	
