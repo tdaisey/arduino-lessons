@@ -16,7 +16,7 @@ Lesson objectives:
 	- Understand what an electrical circuit is.
 	- Understand how to use a breadboard.  
 	- Understand a how to setup a simple electrical circuit.
-    - Understand the concept of a variable in the code. 	
+    - Understand how to use 'variables' in the code. 	
 	
 Related links: 
 
@@ -104,7 +104,7 @@ Code description:
 
 	- The code in this lesson is the same as lesson one (except we are now using pin 9 instead of pin 13).  You can review the code description from lesson one if you need a refresher on the code. Remember to change the pin number in the code to match the pin you used on the Arduino. 
 
-	- Notice the very first line of code at the toptechboy
+	- Notice the very first line of code 
 	
 		int PinNumber = 9;
 		
@@ -121,6 +121,12 @@ Code description:
 		- Lastly we assign value 9 to PinMode.
 		
 		- Now we can use the "PinMode" variable throughout our code and if at some point in the future we want to change it's value we only have to change it in one place.
+		
+	- Similiarly we also declare two more variables on the next two lines
+	
+		- "OnTime" is a variable that holds the LED on time in milliseconds
+		
+		- "OffTime" is a variable that holds the LED off time in milliseconds
 	
 	- The code turns the output of pin 9 on and off, which causes the electrical current flow to start and stop, which causes the LED to blink on and off. 
 	
