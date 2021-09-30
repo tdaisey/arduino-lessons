@@ -1,0 +1,132 @@
+ARDUINO LESSON TWO 
+
+A program that blinks an LED on a breadboard.  
+
+In this lesson we will extend what we did in lesson one.  We will build a simple electrical circuit with an LED on a breadboard.  We will reuse the code from lesson one to blink the LED on the  breadboard. 
+
+This lesson assumes that:
+
+	- You have an arduino properly connected to your computer with a usb cable.
+	- You have selected your arduino type under "Tools/Board" in your Arduino IDE. 
+	- You have selected the port your board is connected to under "Tools/Port" in your Arduino IDE.
+	
+Lesson objectives: 
+
+	- Understand some basic concepts of electrity.
+	- Understand what an electrical circuit is.
+	- Understand how to use a breadboard.  
+	- Understand a how to setup a simple electrical circuit.
+    - Understand the concept of a variable in the code. 	
+	
+Related links: 
+
+	https://www.youtube.com/watch?v=uHUSsSlZa24 
+	
+	https://toptechboy.com/arduino-lesson-2-using-a-breadboard/ 
+	
+	https://www.youtube.com/watch?v=oB1v-wh7EGU 
+	
+Basic electricy concepts and terms: 
+
+	What is Electricity?
+	
+		- Electricity: the flow of electrical power or charge.
+		
+		- Electricity has two characteristecs called "voltage" and "current". 
+		
+			- Current: the flow of electrons (teeny tiny particles with a negative charge). 
+			
+			- Voltage: the force that makes the current flow. 
+		
+		- The flow of electricity threw a wire is very similiar to the flow of water threw a pipe.  
+		
+			- Current is like the flow of water threw the pipe. 
+			
+			- Voltage is like the pressure in the pipe that causes the water to flow.  
+			
+		- Conductor: A material that electrical current flows easily through. 
+		
+			- A copper wire is a good conductor. 
+			
+		- Insulator: A material that electrical current does NOT flow easily through.
+		
+			- Rubber and plastic are insulators.
+	
+	What is an Electrical Circuit?
+	
+		- An electrical circuit is a closed loop of conductive material (a wire in our case).
+
+			- It provides a closed path that electrical current can flow through.
+			
+			- A waterpump usually provides the pressure in a water system. 
+			
+			- Similiarly, a battery usually provides the pressure (ie. voltage) in an electrical circuit. 
+				- Note that in the circuit we will build in this excercise the Arduino takes the place of the battery and provides the voltage.
+
+	What is a Breadboard? 
+
+		- A breadboard allows us to easily use wires to build an electrical circuit. 
+		
+		- Open the file "breadboard.jpg" in the lesson-two folder. This graphic shows how the little holes on the breadboard are connected. Understanding how the holes on a breadboard are connected is key to using it properly. 
+		
+		- The video (starting at about 3:30) also explains how the breadboard holes are connected. 
+
+Setup the circuit:
+
+		- Open the file "LESSON-2-breadboard-example.jpg"  in the lesson-two folder.  
+		
+			- This graphic shows how to wire up the electrical circuit for this lesson. 
+			
+			- The red wire connects pin 9 on the Arduino to the breadboard.  
+			
+			- The red wire then connects to a resistor.  
+			
+				- The resistor reduces the 5 volt signal to a lower voltage level that the LED can handle (if we connect the 5 volt signal directly to the LED we would burn it out).
+				
+			- The output of the resistor then connects to the LED.
+			
+				- IMPORTANT: The long leg of the LED has to be connected to the positive voltage signal coming out of the resistor and the short leg of the LED needs to connect to the ground wire.
+				
+			- The output of the LED then connects to a ground wire.
+			
+			- The ground wire connects back to a pin on the GND (ground) pin on the Arduino.  
+			
+			- Note that the flow of electrical current is out of the Arduino through the red wire, through the resistor, through the LED, then back to the Arduino through the black wire. 
+		
+		- Wire up the circuit now. You can use any of the pins on the Arduino 0-13.  You just have to update the pin number in the code to match the pin you use on the Arduino.
+
+	
+Open the lesson two code example: 
+	
+	- In the Arduino IDE click "File/Open", navigate to "arduino-lessons/lesson-two", click on "lesson-two.ino" and click "Open".  
+	
+Code description:  
+
+	- The code in this lesson is the same as lesson one (except we are now using pin 9 instead of pin 13).  You can review the code description from lesson one if you need a refresher on the code. Remember to change the pin number in the code to match the pin you used on the Arduino. 
+
+	- Notice the very first line of code at the toptechboy
+	
+		int PinNumber = 9;
+		
+		- Here we have declared our first "variable".
+		
+		- A "variable" is used in programming store a value. 
+		
+		- We can name a variable anything we choose, here we have named the variable "PinNumber".
+		
+		- A "variable" has a type.
+		
+		- The type of the PinMode variable is "int" which is short for integer.  An integer is a whole number.  So the value that PinMode holds is some whole number.
+		
+		- Lastly we assign value 9 to PinMode.
+		
+		- Now we can use the "PinMode" variable throughout our code and if at some point in the future we want to change it's value we only have to change it in one place.
+	
+	- The code turns the output of pin 9 on and off, which causes the electrical current flow to start and stop, which causes the LED to blink on and off. 
+	
+Run the code on the Arduino:
+
+	- Upload the code to the Arduino.  
+	- The pattern of the flashing light in the Assateague Lighthouse is two quick flashes, then a pause...  two quick flashes, then a pause...  that pattern repeats over and over.  See if you can make the LED blink in the pattern of the Assateague Lighthouse. 
+	
+	

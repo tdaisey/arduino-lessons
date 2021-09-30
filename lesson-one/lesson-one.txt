@@ -1,6 +1,6 @@
 ARDUINO LESSON ONE 
 
-A program that blinks an LED
+A program that blinks an LED on the arduino board
 
 This lesson assumes that:
 
@@ -15,9 +15,11 @@ Lesson objectives:
 	- Understand how to control pin on the Arduino board to blink and LED. 
 	- Understand how to compile, upload, and run a program on the Arduino.  
 	
-Related video: 
+Related links: 
 
 	https://www.youtube.com/watch?v=d8_xXNcGYgo&list=PLGs0VKk2DiYx6CMdOQR_hmJ2NbB4mZQn-&index=1&t=14s
+	
+	https://toptechboy.com/lesson-1-simple-introduction-to-the-arduino-microcontroller/
 	
 Open the lesson one code example: 
 	
@@ -70,7 +72,7 @@ Code description:
 	
 	- The loop() function continually repeats, causing the LED attached to pin 13 to blink, one second on and one second off.	
 	
-Activity:
+Run the code on the Arduino:
 
 	- The program must be "compiled" before it can be run on the Arduino. Compiling a program just verifies that each line of code is written correctly so that the Arduino can understand them and execute them correclty.  
 	
